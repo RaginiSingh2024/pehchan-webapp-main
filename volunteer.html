@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer - Pehchan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logos/navlogo.png" alt="Pehchan">
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="volunteer.html" class="active">VOLUNTEER</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="donate.html">Signup / Login</a></li>
+            </ul>
+            <a href="donate.html" class="donate-btn">Donate Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="volunteer-hero">
+        <div class="container">
+            <div class="volunteer-hero-content">
+                <div class="volunteer-hero-text">
+                    <h1>Become a Volunteer</h1>
+                    <p>Join your team and change lives</p>
+                    <img src="images/joinus.png" alt="Join Us" class="volunteer-hero-img">
+                </div>
+                <div class="volunteer-hero-info">
+                    <h3>Why Volunteer with us?</h3>
+                    <ul>
+                        <li>Make a real impact in your community</li>
+                        <li>Gain valuable experience</li>
+                        <li>Meet like-minded people</li>
+                        <li>Develop new skills</li>
+                        <li>Be part of social change</li>
+                        <li>Personal growth opportunities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="volunteer-benefits">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎯</div>
+                    <h4>Make an Impact</h4>
+                    <p>Create positive change</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">👥</div>
+                    <h4>Meet People</h4>
+                    <p>Connect with community</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📚</div>
+                    <h4>Learn Skills</h4>
+                    <p>Develop new abilities</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">⭐</div>
+                    <h4>Personal Growth</h4>
+                    <p>Grow as a person</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Form -->
+    <section class="volunteer-form-section">
+        <div class="container">
+            <h2>Volunteer Application Form</h2>
+            <form class="volunteer-form">
+                <!-- Personal Information -->
+                <div class="form-section">
+                    <h3>Personal Information</h3>
+                    <div class="form-row">
+                        <input type="text" placeholder="Name*" required>
+                        <input type="email" placeholder="Email*" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="tel" placeholder="Number*" required>
+                        <input type="date" placeholder="Date of Birth*" required>
+                    </div>
+                    <div class="form-row">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                        <label><input type="radio" name="gender" value="prefer"> Prefer not to say</label>
+                    </div>
+                    <textarea placeholder="Address*" rows="3" required></textarea>
+                </div>
+
+                <!-- Availability -->
+                <div class="form-section">
+                    <h3>Availability</h3>
+                    <input type="text" placeholder="Hours you can volunteer per week/month">
+                    <p>Preferred Days</p>
+                    <div class="checkbox-row">
+                        <label><input type="checkbox"> Monday</label>
+                        <label><input type="checkbox"> Tuesday</label>
+                        <label><input type="checkbox"> Wednesday</label>
+                        <label><input type="checkbox"> Thursday</label>
+                        <label><input type="checkbox"> Friday</label>
+                        <label><input type="checkbox"> Saturday</label>
+                        <label><input type="checkbox"> Sunday</label>
+                    </div>
+                </div>
+
+                <!-- Areas of Interest -->
+                <div class="form-section">
+                    <h3>Areas of Interest</h3>
+                    <div class="checkbox-grid">
+                        <label><input type="checkbox"> Teaching / Mentoring</label>
+                        <label><input type="checkbox"> Fundraising</label>
+                        <label><input type="checkbox"> Social Media & Content</label>
+                        <label><input type="checkbox"> Event Management</label>
+                        <label><input type="checkbox"> Medical Support</label>
+                        <label><input type="checkbox"> Administrative Work</label>
+                        <label><input type="checkbox"> Field Work / Outreach</label>
+                        <label><input type="checkbox"> Other</label>
+                    </div>
+                </div>
+
+                <!-- Additional Information -->
+                <div class="form-section">
+                    <h3>Additional Information</h3>
+                    <textarea placeholder="Tell us about your skills, qualifications, or relevant experience" rows="3"></textarea>
+                    <textarea placeholder="Share your motivation for volunteering*" rows="3" required></textarea>
+                </div>
+
+                <!-- Emergency Contact -->
+                <div class="form-section">
+                    <h3>Emergency Contact</h3>
+                    <div class="form-row">
+                        <input type="text" placeholder="Contact person's name*" required>
+                        <input type="text" placeholder="Relationship*" required>
+                        <input type="tel" placeholder="Contact person's phone number*" required>
+                    </div>
+                </div>
+
+                <!-- Agreement -->
+                <div class="form-section">
+                    <label><input type="checkbox" required> I agree to the terms and conditions *</label>
+                    <label><input type="checkbox"> I consent to be contacted by the NGO</label>
+                </div>
+
+                <button type="submit" class="btn-submit-form">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Volunteer Illustration -->
+    <section class="volunteer-illustration">
+        <div class="container">
+            <img src="images/volunteer.png" alt="Volunteers" class="volunteer-img">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="images/logos/roundlogo.png" alt="Pehchan" class="footer-logo">
+                    <h3>Pehchan</h3>
+                    <p>Your Unique Identity</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>Mumbai, Maharashtra, India</p>
+                    <p>pehchanyui@gmail.com</p>
+                    <p>8356065814, 8691829196</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p>Copyright © Pehchan-Your Unique Identity. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

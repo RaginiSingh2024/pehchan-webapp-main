@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Pehchan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logos/navlogo.png" alt="Pehchan">
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="volunteer.html">VOLUNTEER</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="donate.html" class="active">Signup / Login</a></li>
+            </ul>
+            <a href="donate.html" class="donate-btn">Donate Now</a>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <h1>Support Our Cause</h1>
+    </section>
+
+    <!-- Tabs -->
+    <section class="donate-tabs-section">
+        <div class="container">
+            <div class="tabs-nav">
+                <button class="tab-button active" onclick="showTab('donate')">Donate</button>
+                <button class="tab-button" onclick="showTab('login')">Login</button>
+                <button class="tab-button" onclick="showTab('signup')">Sign Up</button>
+            </div>
+
+            <!-- Donate Tab -->
+            <div id="donate" class="tab-panel active">
+                <div class="donate-content">
+                    <h2>Make a Donation</h2>
+                    <p>Your generous contribution helps us continue our mission</p>
+                    
+                    <!-- Donation Campaigns -->
+                    <div class="campaigns">
+                        <div class="campaign-card">
+                            <img src="images/donateimg1.png" alt="Education Kit">
+                            <h3>Education Kit</h3>
+                            <p>Help provide educational materials</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 60%"></div>
+                            </div>
+                            <p>₹3,000 raised of ₹5,000 goal</p>
+                        </div>
+                        <div class="campaign-card">
+                            <img src="images/donateimg2.png" alt="Poverty Kit">
+                            <h3>Poverty Alleviation Kit</h3>
+                            <p>Support families with essentials</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 45%"></div>
+                            </div>
+                            <p>₹1,350 raised of ₹3,000 goal</p>
+                        </div>
+                    </div>
+
+                    <!-- Donation Form -->
+                    <form class="donate-form">
+                        <h3>Donation Form</h3>
+                        <div class="form-row">
+                            <input type="text" placeholder="Full Name*" required>
+                            <input type="email" placeholder="Email*" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="tel" placeholder="Phone Number*" required>
+                            <input type="number" placeholder="Donation Amount (₹)*" required>
+                        </div>
+                        <textarea placeholder="Message (Optional)" rows="3"></textarea>
+                        <button type="submit" class="btn-submit-form">Proceed to Payment</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Login Tab -->
+            <div id="login" class="tab-panel">
+                <div class="auth-form-wrapper">
+                    <h2>Login to Your Account</h2>
+                    <form class="auth-form">
+                        <input type="email" placeholder="Email Address*" required>
+                        <input type="password" placeholder="Password*" required>
+                        <label><input type="checkbox"> Remember me</label>
+                        <button type="submit" class="btn-submit-form">Login</button>
+                        <p>Don't have an account? <a href="#" onclick="showTab('signup')">Sign Up</a></p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Signup Tab -->
+            <div id="signup" class="tab-panel">
+                <div class="auth-form-wrapper">
+                    <h2>Create Your Account</h2>
+                    <form class="auth-form">
+                        <input type="text" placeholder="Full Name*" required>
+                        <input type="email" placeholder="Email Address*" required>
+                        <input type="tel" placeholder="Phone Number*" required>
+                        <input type="password" placeholder="Password*" required>
+                        <input type="password" placeholder="Confirm Password*" required>
+                        <label><input type="checkbox" required> I agree to Terms & Conditions</label>
+                        <button type="submit" class="btn-submit-form">Create Account</button>
+                        <p>Already have an account? <a href="#" onclick="showTab('login')">Login</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="images/logos/roundlogo.png" alt="Pehchan" class="footer-logo">
+                    <h3>Pehchan</h3>
+                    <p>Your Unique Identity</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>Mumbai, Maharashtra, India</p>
+                    <p>pehchanyui@gmail.com</p>
+                    <p>8356065814, 8691829196</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p>Copyright © Pehchan-Your Unique Identity. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
