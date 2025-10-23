@@ -84,7 +84,7 @@ Pehchan/
 
 
 ## 🌐 Live Project  
-👉 [**Click here to view the live project**](https://raginisingh2024.github.io/pehchan-webapp-main/)
+👉 [**Click here to view the live project**](https://pehchan-35f024.netlify.app/)
 
 
 ## 🤝 Contributing
