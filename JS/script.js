@@ -40,6 +40,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Logo Click Handler
     initLogoClick();
+
+    // Navbar scroll behavior (Home page only)
+    initNavbarScroll();
 });
 
 // Mobile Menu Functionality
@@ -175,6 +178,26 @@ function initLogoClick() {
             window.location.href = 'home.html';
         });
     }
+}
+
+// Solid navbar after scrolling past hero on Home page
+function initNavbarScroll() {
+    const isHome = document.body.classList.contains('home');
+    const navbar = document.querySelector('.navbar');
+    if (!isHome || !navbar) return;
+
+    const onScroll = () => {
+        const threshold = 60;
+        if (window.scrollY > threshold) {
+            navbar.classList.add('navbar-solid');
+        } else {
+            navbar.classList.remove('navbar-solid');
+        }
+    };
+
+    // Initial check and event binding
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
 }
 
 console.log('Pehchan website loaded successfully! 🎉');
