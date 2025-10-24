@@ -84,7 +84,7 @@ Pehchan/
 
 
 ## 🌐 Live Project  
-👉 [**Click here to view the live project**](brilliant-moxie-177457.netlify.app)
+👉 [**Click here to view the live project**](https://brilliant-moxie-177457.netlify.app/home.html)
 
 
 ## 🤝 Contributing
